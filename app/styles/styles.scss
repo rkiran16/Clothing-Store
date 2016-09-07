@@ -1,3 +1,9 @@
+
+@import "variables";
+@import "image-grid";
+@import "promo-scope";
+@import "blog-post";
+
 html,body {
     margin: 0;
     padding: 0;
@@ -42,7 +48,7 @@ html,body {
        .fore-bird {
            width: 960px;
            height: 733px;
-           background: url(../images/fore-bird.png) no-repeat right bottom;
+           background: url('/images/fore-bird.png') no-repeat right bottom;
            position: absolute;
            left: 50%;
             margin-left: -480px;
@@ -71,19 +77,6 @@ html,body {
       .container {
          width:80%;
          margin : 0 auto;
-      }
-
-      .large-window {
-          width: 640px;
-          margin: 0 auto;
-          height: 640px;
-          border-radius: 50%;
-           background-image: url("/images/model.jpg");
-           background-attachment: fixed;
-           background-position: center 0px;
-           background-repeat: repeat-y;
-           position: relative;
-           margin-top: 100px;
       }
     }
 }

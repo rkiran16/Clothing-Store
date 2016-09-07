@@ -17,7 +17,7 @@ gulp.task('browserSync',function() {
 });
 
 gulp.task('sass',function() {
-    return gulp.src('app/styles/*.scss').pipe(sass()).pipe(gulp.dest('app/styles')).pipe(browserSync.reload({stream:true}))
+    return gulp.src('app/styles/styles.scss').pipe(sass()).pipe(gulp.dest('app/styles/css')).pipe(browserSync.reload({stream:true}))
 });
 
 gulp.task('default',function() {

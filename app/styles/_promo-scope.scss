@@ -1,0 +1,68 @@
+.promo-scope {
+    width: 640px;
+    margin: 0 auto;
+    height: 640px;
+    border-radius: 50%;
+     background-image: url("/images/model.jpg");
+     background-attachment: fixed;
+     background-position: center 0px;
+     background-repeat: repeat-y;
+     position: relative;
+
+     .promo-scope-tint {
+        background-color: rgba(0,0,0,0.5);
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+        .promo-text {
+           color: #fff;
+           position: absolute;
+           top:30%;
+           transform: translateY(-30%);
+
+           h2 {
+              line-height: 1.2px;
+              font-weight: bold;
+              margin-top: 15px;
+              margin-bottom: 20px;
+              span {
+                 font-weight:100;
+              }
+           }
+
+           strong {
+              font-size: 30px;
+              display: block;
+              text-align: center;
+              span {
+                 font-size: 18px;
+                 font-style: italic;
+                 color: $gray;
+                 opacity: 0.9;
+              }
+           }
+
+
+           .cta {
+               font-size: 20px;
+               color: $white;
+               display: block;
+               text-align: center;
+               margin-top: 15px;
+               text-decoration: none;
+               border: 1px solid $white;
+               padding: 10px;
+               transition: all 0.30s ease-in-out;
+
+               &:hover {
+                  background-color: $white;
+                  color: $black;
+               }
+           }
+        }
+     }
+}

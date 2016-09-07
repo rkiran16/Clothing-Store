@@ -1,0 +1,255 @@
+.rig {
+  list-style: none;
+  font-size: 0px;
+  margin-left: -2.5%;
+  /* should match li left margin */ }
+  .rig li {
+    display: inline-block;
+    margin: 0 0 2.5% 2.5%;
+    background: #fff;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-size: 1rem;
+    vertical-align: top;
+    box-shadow: 0 0 5px #ddd;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.30s ease-in-out; }
+    .rig li.animate-items {
+      opacity: 1;
+      transform: translateX(0); }
+    .rig li:hover figure img {
+      opacity: 0.5; }
+    .rig li:hover figure figcaption:before {
+      transform: scale(1, 1);
+      visibility: visible; }
+    .rig li:hover figure figcaption:after {
+      transform: scale(1, 1);
+      visibility: visible; }
+    .rig li:hover figure figcaption h2 {
+      opacity: 1; }
+    .rig li figure {
+      background: #000; }
+      .rig li figure img {
+        max-width: 100%;
+        height: auto;
+        transition: all 0.5s ease-in-out; }
+      .rig li figure figcaption {
+        position: absolute;
+        top: 0;
+        width: 94%;
+        text-align: center;
+        height: 94%;
+        z-index: 1;
+        color: #fff;
+        visibility: visible; }
+        .rig li figure figcaption:before {
+          content: '';
+          position: absolute;
+          top: 20px;
+          left: 9px;
+          right: 20px;
+          width: 100%;
+          height: 90%;
+          transform: scale(0, 1);
+          transform-origin: 0 0;
+          visibility: hidden;
+          border-top: 1px solid #fff;
+          border-bottom: 1px solid #fff;
+          transition: all 0.5s ease-in-out; }
+        .rig li figure figcaption:after {
+          content: '';
+          position: absolute;
+          top: 11px;
+          left: 20px;
+          width: 89%;
+          height: 100%;
+          visibility: hidden;
+          border-left: 1px solid #fff;
+          border-right: 1px solid #fff;
+          transform: scale(1, 0);
+          transform-origin: 0 0;
+          transition: all 0.5s ease-in-out; }
+        .rig li figure figcaption h2 {
+          padding: 30px;
+          opacity: 0;
+          font-weight: lighter;
+          transition: all 0.5s ease-in-out; }
+  .rig.columns-2 li {
+    width: 47.5%;
+    /* this value + 2.5 should = 50% */ }
+  .rig.columns-3 li {
+    width: 30.83%;
+    /* this value + 2.5 should = 33% */ }
+  .rig.columns-4 li {
+    width: 22.5%;
+    /* this value + 2.5 should = 25% */ }
+
+@media (max-width: 480px) {
+  .rig {
+    margin-left: 0; }
+    .rig li {
+      width: 100% !important;
+      /* over-ride all li styles */
+      margin: 0 0 20px; } }
+
+.promo-scope {
+  width: 640px;
+  margin: 0 auto;
+  height: 640px;
+  border-radius: 50%;
+  background-image: url("/images/model.jpg");
+  background-attachment: fixed;
+  background-position: center 0px;
+  background-repeat: repeat-y;
+  position: relative; }
+  .promo-scope .promo-scope-tint {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    display: flex;
+    align-content: center;
+    justify-content: center; }
+    .promo-scope .promo-scope-tint .promo-text {
+      color: #fff;
+      position: absolute;
+      top: 30%;
+      transform: translateY(-30%); }
+      .promo-scope .promo-scope-tint .promo-text h2 {
+        line-height: 1.2px;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 20px; }
+        .promo-scope .promo-scope-tint .promo-text h2 span {
+          font-weight: 100; }
+      .promo-scope .promo-scope-tint .promo-text strong {
+        font-size: 30px;
+        display: block;
+        text-align: center; }
+        .promo-scope .promo-scope-tint .promo-text strong span {
+          font-size: 18px;
+          font-style: italic;
+          color: #ddd;
+          opacity: 0.9; }
+      .promo-scope .promo-scope-tint .promo-text .cta {
+        font-size: 20px;
+        color: #fff;
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        text-decoration: none;
+        border: 1px solid #fff;
+        padding: 10px;
+        transition: all 0.30s ease-in-out; }
+        .promo-scope .promo-scope-tint .promo-text .cta:hover {
+          background-color: #fff;
+          color: #000; }
+
+.blogs {
+  width: 740px;
+  margin: 0 auto;
+  position: relative; }
+  .blogs .blog-post {
+    list-style: none;
+    display: block; }
+    .blogs .blog-post li {
+      display: inline-block;
+      margin: 5px;
+      border: 1px solid #000;
+      position: relative;
+      background: #ddd; }
+      .blogs .blog-post li p {
+        text-align: center; }
+      .blogs .blog-post li .cta {
+        color: #fff;
+        background-color: #000;
+        font-size: 16px;
+        padding: 5px;
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        text-decoration: none; }
+        .blogs .blog-post li .cta::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #fff;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s; }
+        .blogs .blog-post li .cta:hover::before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
+    .blogs .blog-post .blog-1 {
+      transform: translateX(100px); }
+    .blogs .blog-post .blog-2 {
+      z-index: 1; }
+    .blogs .blog-post .blog-3 {
+      transform: translateX(-100px); }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+  html img, body img {
+    max-width: 100%; }
+  html figure, body figure {
+    margin: 0; }
+  html header, body header {
+    position: relative;
+    height: 600px;
+    background-image: url("/images/bird-bg.jpg");
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+    overflow: hidden; }
+    html header .logo, body header .logo {
+      width: 100%;
+      height: 100px;
+      background: url("/images/logo.svg") no-repeat center;
+      position: absolute;
+      top: 50%;
+      margin-top: -50px; }
+    html header .back-bird, body header .back-bird {
+      width: 960px;
+      height: 298px;
+      position: absolute;
+      background: url("/images/back-bird.png") no-repeat top left;
+      left: 50%;
+      margin-left: -480px; }
+    html header .fore-bird, body header .fore-bird {
+      width: 960px;
+      height: 733px;
+      background: url("/images/fore-bird.png") no-repeat right bottom;
+      position: absolute;
+      left: 50%;
+      margin-left: -480px;
+      top: 380px; }
+  html .content, body .content {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    background: white; }
+    html .content h1, body .content h1 {
+      font-size: 40px;
+      font-weight: lighter; }
+    html .content article, body .content article {
+      padding: 100px 0;
+      max-width: 640px;
+      margin: 0 auto;
+      text-align: center; }
+    html .content .container, body .content .container {
+      width: 80%;
+      margin: 0 auto; }
