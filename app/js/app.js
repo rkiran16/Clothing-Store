@@ -23,7 +23,7 @@ $(window).scroll(function(){
          console.log(i);
          setTimeout(function() {
            $('.container ul li').eq(i).addClass('animate-items');
-         },(700 * (Math.exp(i * 0.14))) - 700);
+         },(400 * (Math.exp(i * 0.20))) - 300);
        });
   }
 

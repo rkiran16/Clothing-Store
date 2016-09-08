@@ -3,6 +3,7 @@
 @import "image-grid";
 @import "promo-scope";
 @import "blog-post";
+@import "footer";
 
 html,body {
     margin: 0;
@@ -61,6 +62,8 @@ html,body {
       margin: 0 auto;
       overflow: hidden;
       background: white;
+      z-index: 2;
+      margin-bottom: 400px;
 
       h1 {
          font-size: 40px;
